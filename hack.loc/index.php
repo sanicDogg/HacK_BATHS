@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>//xyu
+<!DOCTYPE HTML>
 <html>
 	<head>
 	<meta charset="utf-8">
@@ -90,9 +90,19 @@
 					<div class="container">
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
-								<h2>Вы можете войти с помощью VK</h2>
+								<h2>Вход для организаций</h2>
 								<p>это просто</p>
-								<p><a href="/vk_access.php" class="btn btn-primary btn-lg btn-custom">Войти через VK</a></p>
+								<p><a href="" class="btn btn-primary btn-lg btn-custom">Войти через VK</a></p>
+								<h2>Регистрация для организаций</h2>
+								<p>это просто</p>
+								<p><a href="" class="btn btn-primary btn-lg btn-custom">Войти через VK</a></p>
+
+								<h2>Вход для волонтеров</h2>
+								<p>это просто</p>
+								<p><a href="" class="btn btn-primary btn-lg btn-custom">Войти через VK</a></p>
+								<h2>Регистрация для волонтеров</h2>
+								<p>это просто</p>
+								<p><a href="p" class="btn btn-primary btn-lg btn-custom">Войти через VK</a></p>
 							</div>
 						</div>
 					</div>
