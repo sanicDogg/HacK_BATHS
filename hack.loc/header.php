@@ -130,11 +130,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-2">
-							<div id="colorlib-logo"><a href="index.html">Unapp</a></div>
+							<div id="colorlib-logo"><a href="index.php">The best volunteer maker</a></div>
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
-								<li><a href="index.html">Home</a></li>
+								<li><a href="index.php">Home</a></li>
 								<li class="has-dropdown active">
 									<a href="work.html">Works</a>
 									<ul class="dropdown">

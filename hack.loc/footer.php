@@ -2,27 +2,22 @@
 			<div class="container">
 				<div class="row row-pb-md">
 					<div class="col-md-3 colorlib-widget">
-						<h4>About unapp</h4>
-						<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+						<h4>О The best volunteer maker</h4>
+						<p>Управление волонтерским сообществом в одном месте.</p>
 						<p>
 							<ul class="colorlib-social-icons">
 								<li><a href="#"><i class="icon-twitter"></i></a></li>
 								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-linkedin"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble"></i></a></li>
 							</ul>
 						</p>
 					</div>
 					<div class="col-md-3 colorlib-widget">
-						<h4>Information</h4>
+						<h4>Информация</h4>
 						<p>
 							<ul class="colorlib-footer-links">
-								<li><a href="#"><i class="icon-check"></i> Home</a></li>
-								<li><a href="#"><i class="icon-check"></i> Gallery</a></li>
-								<li><a href="#"><i class="icon-check"></i> About</a></li>
-								<li><a href="#"><i class="icon-check"></i> Blog</a></li>
-								<li><a href="#"><i class="icon-check"></i> Contact</a></li>
-								<li><a href="#"><i class="icon-check"></i> Privacy</a></li>
+								<li><a href="index.php"><i class="icon-check"></i> Домой</a></li>
+								<li><a href="about.html"><i class="icon-check"></i> О нас</a></li>
+								<li><a href="blog.html"><i class="icon-check"></i> Новости</a></li>
 							</ul>
 						</p>
 					</div>
