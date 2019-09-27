@@ -11,7 +11,7 @@ use \VK\OAuth\VKOAuthResponseType;
 $oauth = new VKOAuth();
 $client_id = 7145903;
 
-$redirect_uri = 'http://hack.loc/get_token.php';
+$redirect_uri = 'hack.loc';
 $display = VK\OAuth\VKOAuthDisplay::PAGE;
 $scope = [VK\OAuth\Scopes\VKOAuthUserScope::FRIENDS, VK\OAuth\Scopes\VKOAuthUserScope::PHOTOS];
 $state = 'secret_state_code';
