@@ -23,7 +23,7 @@
 					</div>
 
 					<div class="col-md-3 colorlib-widget">
-						<h4>Recent Blog</h4>
+						<h4>Свежее</h4>
 						<div class="f-blog">
 							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);">
 							</a>
@@ -51,12 +51,11 @@
 					</div>
 
 					<div class="col-md-3 colorlib-widget">
-						<h4>Contact Info</h4>
+						<h4>Контакты</h4>
 						<ul class="colorlib-footer-links">
-							<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
-							<li><a href="tel://1234567920"><i class="icon-phone"></i> + 1235 2355 98</a></li>
-							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> info@yoursite.com</a></li>
-							<li><a href="#"><i class="icon-location4"></i> yourwebsite.com</a></li>
+							<li>Россия, Санкт-Петербург, <br> Исакиевская пл. 1</li>
+							<li><a href="tel://1234567920"><i class="icon-phone"></i> + 79*********</a></li>
+							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> the_best_volunteer_maker@mail.ru</a></li>
 						</ul>
 					</div>
 				</div>
