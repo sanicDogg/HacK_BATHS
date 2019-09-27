@@ -1,4 +1,4 @@
-		<footer id="colorlib-footer">
+<footer id="colorlib-footer">
 			<div class="container">
 				<div class="row row-pb-md">
 					<div class="col-md-3 colorlib-widget">
