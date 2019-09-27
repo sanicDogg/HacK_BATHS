@@ -90,9 +90,9 @@
 					<div class="container">
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
-								<h2>Take on your biggest projects and goals</h2>
-								<p>with Unapp's high quality features</p>
-								<p><a href="gallery.html" class="btn btn-primary btn-lg btn-custom">Get premium</a></p>
+								<h2>Вы можете войти с помощью VK</h2>
+								<p>это просто</p>
+								<p><a href="/vk_access.php" class="btn btn-primary btn-lg btn-custom">Войти через VK</a></p>
 							</div>
 						</div>
 					</div>
