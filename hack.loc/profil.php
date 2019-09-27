@@ -1,7 +1,7 @@
 <?php
 	include 'header.php';
 
-	include 'content/content_register.php';
+	include 'content/content_profil.php';
 
 	include 'footer.php';
 ?>
