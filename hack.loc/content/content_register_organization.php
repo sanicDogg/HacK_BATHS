@@ -1,5 +1,5 @@
 
- 
+
 <section id="home" class="video-hero" style="height: 700px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
 
 <div class="overlay"></div>
@@ -19,7 +19,7 @@
 </section>
 
 <div >
-<form style="padding: 100px"  method="pOST" action="/add_volunteer.php">
+<form style="padding: 100px"  method="POST" action="/add_volunteer.php">
 
 	<div>
 		<p align="center" style="font-size: 27px">Заполните форму для регистрации</p>
@@ -41,7 +41,7 @@
 			<input type="tel" id="fname" class="form-control" name="phoneNum" placeholder="Номер телефона. Пример: 89992225040" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="11">
 		</div>
 	</div>
-	
+
 
 	<div class="form-group">
 		<input type="submit" value="Отправить" class="btn btn-primary">
