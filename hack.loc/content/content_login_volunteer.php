@@ -40,9 +40,11 @@
 			<input type="password" id="lname" class="form-control" name="password" placeholder="Введите пароль">
 		</div>
 	</div>
+	<div class="">
 	<label class="checkbox">
     <input type="checkbox"> Запомнить
   </label>
+</div>
 
 	<div class="form-group">
 		<input type="submit" value="Войти" class="btn btn-primary">
