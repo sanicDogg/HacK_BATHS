@@ -9,7 +9,7 @@
 							<ul>
 								<li><a href="index.php">Домой</a></li>
 								<li class="has-dropdown active">
-									<a href="work.php">Мой профиль</a>
+									<a href="profile.php">Мой профиль</a>
 									<ul class="dropdown">
 										<li><a href="work-grid.html">Works grid with text</a></li>
 										<li><a href="work-grid-without-text.html">Works grid w/o text</a></li>
