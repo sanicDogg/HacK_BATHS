@@ -1,7 +1,11 @@
 <?php
 if (!empty($_SESSION['logged_user'])) {
-$id = $_SESSION['logged_user']->id;
-$user = R::load('volunteers', $id);
+	$id = $_SESSION['logged_user']->id;
+	$user = R::load('volunteers', $id);
+}
+
+if ($_GET["logout"]) {
+	unset($_SESSION['logged_user']);
 }
 ?>
 
