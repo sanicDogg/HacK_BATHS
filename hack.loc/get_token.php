@@ -31,11 +31,15 @@ if  (!empty($access_token)){
   require "db_connect.php";
   $user = R::dispense('volunteers');
   $user->accessToken = $access_token;
+  $user->isVolunteer = 1;
+
   R::store($user);
 
-
-
-} else die();
+  $_SESSION['logged_user'] = $user;
+  header('Location: index.php');
+} else {
+  echo "Не удалось зарегистрироваться через ВК(";
+}
 
 include 'footer.php';
 ?>
