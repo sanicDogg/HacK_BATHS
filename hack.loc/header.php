@@ -47,6 +47,7 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+<<<<<<< HEAD
 	</head>
 	<body>
 
@@ -76,3 +77,6 @@
 				</div>
 			</div>
 		</nav>
+=======
+	</head>
+>>>>>>> 1a34b8ebb006511b69763f7e929e587c9b7591ca

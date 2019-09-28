@@ -7,7 +7,11 @@
         <div class="row">
         <div class="col-md-6 col-md-offset-0">
           <div class="animate-box">
+<<<<<<< HEAD
             <p><a href="/registr.php" class="btn btn-primary btn-lg btn-custom">Я волонтер</a></p>
+=======
+            <p><a href="register_volunteer.php" class="btn btn-primary btn-lg btn-custom">Я волонтер</a></p>
+>>>>>>> 1a34b8ebb006511b69763f7e929e587c9b7591ca
           </div>
         </div>
         <div class="col-md-6 col-md-offset-0">
