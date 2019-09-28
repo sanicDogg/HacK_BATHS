@@ -21,6 +21,7 @@
 		$user->allergy = $_POST["allergy"];
 		$user->photoLink = $_POST["photoLink"];
 		$user->password = $_POST["password"];
+		$user->isVolunteer = 1;
 		/*
 		$user->whyCooperating = $_GET["whyCooperating"];
 		*/
