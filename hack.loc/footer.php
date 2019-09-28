@@ -16,8 +16,8 @@
 						<p>
 							<ul class="colorlib-footer-links">
 								<li><a href="index.php"><i class="icon-check"></i> Домой</a></li>
-								<li><a href="about.html"><i class="icon-check"></i> О нас</a></li>
-								<li><a href="blog.html"><i class="icon-check"></i> Новости</a></li>
+								<li><a href="about.php"><i class="icon-check"></i> О нас</a></li>
+								<li><a href="news.php"><i class="icon-check"></i> Новости</a></li>
 							</ul>
 						</p>
 					</div>
