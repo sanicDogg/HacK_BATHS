@@ -63,12 +63,8 @@
 						<div class="col-md-10 text-right menu-1">
 							<ul>
 								<li><a href="index.php">Домой</a></li>
-								<li class="has-dropdown active">
+								<li class="">
 									<a href="profil.php">Мой профиль</a>
-									<ul class="dropdown">
-										<li><a href="work-grid.html">Works grid with text</a></li>
-										<li><a href="work-grid-without-text.html">Works grid w/o text</a></li>
-									</ul>
 								</li>
 								<li><a href="organizations.php">Организации</a></li>
 								<li><a href="news.php">События</a></li>

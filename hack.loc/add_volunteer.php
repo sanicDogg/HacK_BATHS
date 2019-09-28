@@ -11,18 +11,15 @@ $user->vkLink = $_GET["vkLink"];
 $user->placeOfStudy = $_GET["placeOfStudy"];
 $user->specialty = $_GET["specialty"];
 $user->languages = $_GET["languages"];
-/*
-
-
 $user->exp = $_GET["exp"];
 
 $user->expKids = $_GET["expKids"];
 $user->addSkills = $_GET["addSkills"];
 $user->expections = $_GET["expections"];
 $user->allergy = $_GET["allergy"];
-
-
 $user->photoLink = $_GET["photoLink"];
+/*
+
 
 $user->whyCooperating = $_GET["whyCooperating"];
 */

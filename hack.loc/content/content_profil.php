@@ -1,3 +1,7 @@
+<?php
+?>
+
+
 <section id="home" class="video-hero" style="height: 500px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
 		<div class="overlay"></div>
 			<div class="display-t display-t2 text-center">
@@ -5,7 +9,7 @@
 					<div class="container">
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
-								<h2>Portfolio</h2>
+								<h2>Профиль</h2>
 								<p class="breadcrumbs"><span><a href="index.html">Home</a></span> <span>Work</span></p>
 							</div>
 						</div>
