@@ -4,7 +4,7 @@ if (!empty($_SESSION['logged_user'])) {
 	$user = R::load('volunteers', $id);
 }
 
-if ($_GET["logout"]) {
+if ($_GET["logout"] == 1) {
 	unset($_SESSION['logged_user']);
 }
 ?>
@@ -23,7 +23,7 @@ if ($_GET["logout"]) {
 						<?if (!empty($_SESSION['logged_user'])):?>
             <div class="col-md-12 col-md-offset-0">
           		<div class="animate-box">
-            		<p><a href="vibor_volunteer.php" class="btn btn-primary btn-lg btn-custom">Выйти из профиля</a></p>
+            		<p><a href="profile.php?logout=1" class="btn btn-primary btn-lg btn-custom">Выйти из профиля</a></p>
           		</div>
         		</div>
 						<?endif;?>
