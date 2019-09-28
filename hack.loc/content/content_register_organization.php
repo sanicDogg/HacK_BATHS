@@ -19,8 +19,7 @@
 </section>
 
 <div >
-<form style="padding: 100px"  method="POST" action="/add_volunteer.php">
-
+<form style="padding: 100px"  method="POST" action="/add_organization.php">
 	<div>
 		<p align="center" style="font-size: 27px">Заполните форму для регистрации</p>
 	</div>
@@ -38,7 +37,7 @@
 
 	<div class="row form-group">
 		<div class="col-md-6">
-			<input type="tel" id="fname" class="form-control" name="phoneNum" placeholder="Номер телефона. Пример: 89992225040" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="11">
+			<input type="tel" id="fname" class="form-control" name="contact_phone" placeholder="Номер телефона. Пример: 89992225040" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="11">
 		</div>
 	</div>
 
