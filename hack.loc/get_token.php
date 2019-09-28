@@ -33,10 +33,11 @@ if  (!empty($access_token)){
   $user->accessToken = $access_token;
   $user->isVolunteer = 1;
 
+  session_start();
+  $_SESSION['logged_user'] = $user;
   R::store($user);
 
-  $_SESSION['logged_user'] = $user;
-  header('Location: index.php');
+  header('Location: profile.php');
 } else {
   echo "Не удалось зарегистрироваться через ВК(";
 }

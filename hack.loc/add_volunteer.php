@@ -22,6 +22,8 @@
 		$user->photoLink = $_POST["photoLink"];
 		$user->password = $_POST["password"];
 		$user->isVolunteer = 1;
+
+		$_SESSION['logged_user'] = $user;
 		/*
 		$user->whyCooperating = $_GET["whyCooperating"];
 		*/
