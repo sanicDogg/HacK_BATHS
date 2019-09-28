@@ -10,16 +10,17 @@ $user = R::load('volunteers', $id);
 			<div class="display-t display-t2 text-center">
 				<div class="display-tc display-tc2">
 					<div class="container">
-                    <div class="col-md-6 col-md-offset-0">
-          <div class="animate-box">
-            <p><a href="vibor_volunteer.php" class="btn btn-primary btn-lg btn-custom">Я волонтер</a></p>
-          </div>
-        </div>
+
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
 								<h2>Мой профиль</h2>
 								<p class="breadcrumbs"><span><a href="index.php">Домой</a></span> <span>Профиль</span></p>
 							</div>
+            <div class="col-md-12 col-md-offset-0">
+          <div class="animate-box">
+            <p><a href="vibor_volunteer.php" class="btn btn-primary btn-lg btn-custom">Выйти из профиля</a></p>
+          </div>
+        </div>
 						</div>
 					</div>
 				</div>
