@@ -1,7 +1,7 @@
 <?php
 
 	require "db_connect.php";
-	if ($POST["password"] == $POST["password2"])
+	if ($_POST["password"] == $_POST["password2"])
 	{
 		$user = R::dispense('volunteers');
 
