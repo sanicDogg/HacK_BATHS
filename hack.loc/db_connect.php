@@ -7,4 +7,3 @@ R::setup( 'mysql:host=localhost;dbname=hack_db',
 
 //запуск сессиии
 session_start();
-?>

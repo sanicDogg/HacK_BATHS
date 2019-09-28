@@ -1,6 +1,25 @@
+<?php
+	$data = $_GET;
+
+	if (isset($data['log_in'])) {
+		$user = R::findOne('volunteers', 'email = ?', array($data["email"]));
+		if ($user) {
+			if ($data['password'] == $user->password) {
+				$_SESSION['logged_user'] = $user;
+			} else  {
+				echo "Неверный пароль";
+			}
+		} else {
+			echo "Пользователя с таким логином не существует";
+		}
+	}
+
+?>
+
 <section id="home" class="video-hero" style="height: 700px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
 
-<div class="overlay"></div>
+<? if (empty($_SESSION['logged_user'])): ?>
+<div class="overlay">
 			<div class="display-t display-t2 text-center">
 				<div class="display-tc display-tc2">
 					<div class="container">
@@ -13,10 +32,10 @@
 					</div>
 				</div>
 			</div>
-
+</div>
 </section>
 
-<form style="padding: 100px" method="POST" action="/profile.php">
+<form style="padding: 100px" method="GET" action="/login_volunteer.php">
 	<div style="
 	padding-bottom: 0;
 	text-align: center;
@@ -47,6 +66,25 @@
 </div>
 
 	<div class="form-group">
-		<input type="submit" value="Войти" class="btn btn-primary">
+		<input type="submit" name="log_in" value="Войти" class="btn btn-primary">
 	</div>
 </form>
+
+<? else: ?>
+	<section id="home" class="video-hero" style="height: 700px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
+
+	<div class="overlay">
+				<div class="display-t display-t2 text-center">
+					<div class="display-tc display-tc2">
+						<div class="container">
+							<div class="col-md-12 col-md-offset-0">
+								<div class="animate-box">
+									<h1>Вход выполнен.</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	</div>
+	</section>
+<?endif;?>
