@@ -16,7 +16,7 @@
 
 </section>
 
-<form style="padding: 100px" method="pOST" action="/add_volunteer.php">
+<form style="padding: 100px" method="POST" action="/add_volunteer.php">
 	<div style="
 	padding-bottom: 0;
 	text-align: center;
@@ -59,7 +59,7 @@
 	<div class="row form-group">
 		<div class="col-md-12">
 			<input type="text" id="" class="form-control" name="specialty" placeholder="Специальность по диплому">
-		</div> 
+		</div>
 	</div>
 	<div class="row form-group">
 		<div class="col-md-12">
@@ -74,7 +74,7 @@
   <input type="checkbox" value="">
    Экспозиция "Россия делает сама"
 		</label>
- 
+
 		<label class="checkbox">
   <input type="checkbox" name="optionsRadios" id="optionsRadios1" value="option1" checked>
    Временные выставки
@@ -87,7 +87,7 @@
   <input type="checkbox" value="">
    Лекторий
 		</label>
- 
+
 		<label class="checkbox">
   <input type="checkbox" name="optionsRadios" id="" value="option3" checked>
    Спецпроект Polytech.Science.Art
