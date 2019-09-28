@@ -5,8 +5,8 @@
         <div class="container">
           <div class="col-md-12 col-md-offset-0">
             <div class="animate-box">
-              <h2>Services</h2>
-              <p class="breadcrumbs"><span><a href="index.html">Home</a></span> <span>Services</span></p>
+              <h2>Команда</h2>
+              <p class="breadcrumbs"><span><a href="index.php">Домой</a></span> <span>О нас</span></p>
             </div>
           </div>
         </div>
@@ -14,35 +14,21 @@
     </div>
   </section>
 
-  <div class="colorlib-about">
-    <div class="container">
-      <div class="row row-pb-lg">
-        <div class="col-md-6 animate-box">
-          <div class="video colorlib-video" style="background-image: url(images/about.jpg);">
-            <a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-play3"></i></a>
-            <div class="overlay"></div>
-          </div>
-        </div>
-        <div class="col-md-6 animate-box">
-          <h2>About unapp</h2>
-          <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-          <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-        </div>
-      </div>
+  
       <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-          <h2>Collaborate with your design team in a new way</h2>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          <h2>Перспективные ребята, стоящие вашего времени и внимания</h2>
+          <p>Каждый из нас вкладывал силы в данный проект, стараясь максимально эффективно распределить время. Мы трудились для неравнодушных людей, готовых помочь обществу.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3 text-center animate-box">
           <div class="staff-entry">
-            <a href="#" class="staff-img" style="background-image: url(images/person1.jpg);"></a>
+            <a href="#" class="staff-img" style="background-image: url(images/2QC-qIJeYH4.jpg);"></a>
             <div class="desc">
-              <h3>Emily Turner</h3>
-              <span>Developer</span>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              <h3>Александр Молитвин</h3>
+              <span>Камитан, программист</span>
+              <p>Небольшой мальчуган-гений. Написал сайт стоящий 20к в одиночку и не попросил денег.</p>
               <p>
                 <ul class="colorlib-social-icons">
                   <li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -56,11 +42,11 @@
         </div>
         <div class="col-md-3 text-center animate-box">
           <div class="staff-entry">
-            <a href="#" class="staff-img" style="background-image: url(images/person2.jpg);"></a>
+            <a href="#" class="staff-img" style="background-image: url(images/pxkKrN3vsCQ.jpg);"></a>
             <div class="desc">
-              <h3>Adam Morris</h3>
-              <span>Developer</span>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              <h3>Виталий Гайнуллин</h3>
+              <span>IT евангелист, дизайнер</span>
+              <p>Парень, хорошо работающий языком и это не то, о чем вы возможно подумали.</p>
               <p>
                 <ul class="colorlib-social-icons">
                   <li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -76,9 +62,9 @@
           <div class="staff-entry">
             <a href="#" class="staff-img" style="background-image: url(images/person3.jpg);"></a>
             <div class="desc">
-              <h3>Noah Nelson</h3>
+              <h3>Даня Иншаков</h3>
               <span>Designer</span>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              <p>Смышленый паренек .</p>
               <p>
                 <ul class="colorlib-social-icons">
                   <li><a href="#"><i class="icon-twitter"></i></a></li>
