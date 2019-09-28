@@ -1,7 +1,7 @@
 <?php
-$id = 7;
+$id = $_SESSION['logged_user']->id;
 $user = R::load('volunteers', $id);
-if (!empty($user)) {
+if (empty($user)) {
   echo "<p>empty</p>";
 }
 ?>
@@ -9,6 +9,20 @@ if (!empty($user)) {
 <div style="margin: 100px" class="colorlib-services colorlib-bg-white">
   <div class="container">
     <div class="row">
+      <? if (empty($_SESSION['logged_user']->access_token)):?>
+      <div class="col-md-4 text-center animate-box fadeInUp animated-fast">
+        <div class="services">
+          <p>
+            <?php
+                echo $fio = $user->fio;
+                $photo_link = $user->photo_link;
+            ?>
+          <img src="<?echo $photo_link;?>" width="200" height="200">
+          </p>
+        <?endif;?>
+        </div>
+      </div>
+      <? if (!empty($_SESSION['logged_user']->access_token)):?>
       <div class="col-md-4 text-center animate-box fadeInUp animated-fast">
         <div class="services">
           <p>
@@ -32,10 +46,9 @@ if (!empty($user)) {
                 'fields' => array('city', 'about', 'activities')));
               print_r($response);
             ?>
-            <p>Фамилия:</p>
-            <p><?echo $response[0]["last_name"];?></p>
         </div>
       </div>
+      <?endif;?>
       <div class="col-md-4 text-center animate-box fadeInUp animated-fast">
         <div class="services">
 

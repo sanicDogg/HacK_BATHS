@@ -36,7 +36,7 @@ if  (!empty($access_token)){
   R::store($user);
 
   $_SESSION['logged_user'] = $user;
-  header('Location: index.php');
+  header('Location: profile.php');
 } else {
   echo "Не удалось зарегистрироваться через ВК(";
 }
