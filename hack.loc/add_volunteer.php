@@ -33,7 +33,6 @@
 		echo '<p>Пароли не совпадают!</p>';	}
 
 	include 'header.php';
-	include 'top_menu.php';
 	include 'content/content_home.php';
 
 	include 'footer.php';
