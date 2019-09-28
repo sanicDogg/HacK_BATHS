@@ -1,7 +1,7 @@
 <?php
 
 	require "db_connect.php";
-	if ($POST->password == $POST->password2)
+	if ($POST["password"] == $POST["password2"])
 	{
 		$user = R::dispense('volunteers');
 
@@ -30,7 +30,8 @@
 
 		R::store($user);
 	}	else {
-		echo '<p>Пароли не совпадают!</p>';	}
+		echo '<p>Пароли не совпадают!</p>';
+	}
 
 	include 'header.php';
 	include 'content/content_home.php';
