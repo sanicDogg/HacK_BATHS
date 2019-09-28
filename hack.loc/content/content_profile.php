@@ -25,7 +25,7 @@ $user = R::load('volunteers', $id);
 //Проверка на авторизованность пользователя
 if (!empty($_SESSION['logged_user'])):
 ?>
-<div style="" class="colorlib-services colorlib-bg-white">
+<div style="margin: 300px" class="colorlib-services colorlib-bg-white">
   <div class="container">
     <div class="row">
       <? if (empty($_SESSION['logged_user']->access_token)):?>
@@ -70,6 +70,22 @@ if (!empty($_SESSION['logged_user'])):
       <?endif;?>
       <div class="col-md-4 text-center animate-box fadeInUp animated-fast">
         <div class="services">
+          <div class="col-md-3 text-center animate-box">
+          <div class="staff-entry">
+            <a href="#" class="staff-img" style="background-image: url(images/person4.jpg);"></a>
+            <div class="desc">
+              <h3>Dorothy Murphy</h3>
+              <span>Designer</span>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              <p>
+                <ul class="colorlib-social-icons">
+                  <li><a href="#"><i class="icon-twitter"></i></a></li>
+                  <li><a href="#"><i class="icon-facebook"></i></a></li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
 
         </div>
       </div>
