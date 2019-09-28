@@ -33,7 +33,7 @@ $user = R::load('volunteers', $id);
 //Проверка на авторизованность пользователя
 if (!empty($_SESSION['logged_user'])):
 ?>
-<div style="margin: 300px" class="colorlib-services colorlib-bg-white">
+<div class="colorlib-services colorlib-bg-white">
   <div class="container">
     <div class="row">
       <? if (empty($_SESSION['logged_user']->access_token)):?>
