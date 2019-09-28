@@ -7,7 +7,7 @@
         <div class="row">
         <div class="col-md-6 col-md-offset-0">
           <div class="animate-box">
-            <p><a href="" class="btn btn-primary btn-lg btn-custom">Я волонтер</a></p>
+            <p><a href="register_volunteer.php" class="btn btn-primary btn-lg btn-custom">Я волонтер</a></p>
           </div>
         </div>
         <div class="col-md-6 col-md-offset-0">
