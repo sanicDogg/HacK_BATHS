@@ -6,6 +6,7 @@ if (!empty($_SESSION['logged_user'])) {
 
 if ($_GET["logout"] == 1) {
 	unset($_SESSION['logged_user']);
+	session_unset();
 }
 ?>
 
