@@ -6,4 +6,6 @@ R::setup( 'mysql:host=localhost;dbname=hack_db',
         'root', '' ); //for both mysql or mariaDB
 
 //запуск сессиии
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}

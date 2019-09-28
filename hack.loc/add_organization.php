@@ -1,6 +1,6 @@
  <?
-  $data = $_POST;
   require "db_connect.php";
+  $data = $_POST;
   $user = R::dispense('organizations');
 
   $user->name = $data["name"];
