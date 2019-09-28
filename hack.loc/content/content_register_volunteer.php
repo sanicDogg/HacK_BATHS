@@ -16,7 +16,7 @@
 
 </section>
 
-<form style="padding: 100px" action="/add_volunteer.php">
+<form style="padding: 100px" method="POST" action="/add_volunteer.php">
 	<div style="
 	padding-bottom: 0;
 	text-align: center;
@@ -123,6 +123,17 @@
     <div class="row form-group">
 		<div class="col-md-6">
 			<input type="text" id="" class="form-control" name="photoLink" placeholder="Ссылка на Ваше фото">
+		</div>
+    </div>
+
+<div class="row form-group">
+		<div class="col-md-6">
+			<input type="password" id="" class="form-control" name="password" placeholder="Пароль">
+		</div>
+    </div>
+<div class="row form-group">
+		<div class="col-md-6">
+			<input type="password" id="" class="form-control" name="password2" placeholder="Повторите пароль">
 		</div>
     </div>
 
