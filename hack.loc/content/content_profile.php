@@ -16,11 +16,13 @@ $user = R::load('volunteers', $id);
 								<h2>Мой профиль</h2>
 								<p class="breadcrumbs"><span><a href="index.php">Домой</a></span> <span>Профиль</span></p>
 							</div>
+						<?if (!empty($_SESSION['logged_user'])):?>
             <div class="col-md-12 col-md-offset-0">
-          <div class="animate-box">
-            <p><a href="vibor_volunteer.php" class="btn btn-primary btn-lg btn-custom">Выйти из профиля</a></p>
-          </div>
-        </div>
+          		<div class="animate-box">
+            		<p><a href="vibor_volunteer.php" class="btn btn-primary btn-lg btn-custom">Выйти из профиля</a></p>
+          		</div>
+        		</div>
+						<?endif;?>
 						</div>
 					</div>
 				</div>
@@ -33,11 +35,6 @@ if (!empty($_SESSION['logged_user'])):
 ?>
 <div style="margin: 300px" class="colorlib-services colorlib-bg-white">
   <div class="container">
-		<div class="col-md-12 col-md-offset-0">
-                   <div class="animate-box">
-                       <p><a href="vibor_volunteer.php" class="btn btn-primary btn-lg btn-custom">Выйти из профиля</a></p>
-                   </div>
-    </div>
     <div class="row">
       <? if (empty($_SESSION['logged_user']->access_token)):?>
       <div class="col-md-4 text-center animate-box fadeInUp animated-fast">
