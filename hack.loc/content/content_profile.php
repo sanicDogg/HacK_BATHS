@@ -1,10 +1,10 @@
 <?php
+if (!empty($_SESSION['logged_user'])) {
 $id = $_SESSION['logged_user']->id;
 $user = R::load('volunteers', $id);
-if (empty($user)) {
-  echo "<p>empty</p>";
 }
 ?>
+
 <section id="home" class="video-hero" style="height: 500px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
 		<div class="overlay"></div>
 			<div class="display-t display-t2 text-center">
@@ -26,6 +26,10 @@ if (empty($user)) {
 			</div>
 </section>
 
+<?
+//Проверка на авторизованность пользователя
+if (!empty($_SESSION['logged_user'])):
+?>
 <div style="margin: 300px" class="colorlib-services colorlib-bg-white">
   <div class="container">
     <div class="row">
@@ -93,3 +97,18 @@ if (empty($user)) {
     </div>
   </div>
 </div>
+
+<?else:?>
+
+<div style="" class="colorlib-services colorlib-bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 text-center animate-box fadeInUp animated-fast">
+        <div class="services">
+            <p>Вы не авторизованы!!!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<?endif;?>
