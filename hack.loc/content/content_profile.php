@@ -1,13 +1,8 @@
 <?php
-$id = 4;
+$id = 7;
 $user = R::load('volunteers', $id);
-if (empty($user)) {
+if (!empty($user)) {
   echo "<p>empty</p>";
-}
-else {
-
-
-
 }
 ?>
 

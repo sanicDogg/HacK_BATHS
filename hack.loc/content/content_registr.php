@@ -16,8 +16,9 @@
 
 </section>
 
-<form style="padding: 100px" action="/add_volunteer.php">
+<form style="padding: 150px" action="/add_volunteer.php">
 	<div style="
+	padding: 150px;
 	padding-bottom: 0;
 	text-align: center;
 " class="row">

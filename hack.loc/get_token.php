@@ -22,9 +22,9 @@ $response = $oauth->getAccessToken($client_id, $client_secret, $redirect_uri, $c
 $access_token = $response['access_token'];
 
 include 'header.php';
-
+/*
 include 'top_menu.php';
-
+*/
 include 'content/content_home.php';
 
 if  (!empty($access_token)){

@@ -47,7 +47,6 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-<<<<<<< HEAD
 	</head>
 	<body>
 
@@ -59,13 +58,13 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
-							<div id="colorlib-logo"><a href="index.html">The best volunteer maker</a></div>
+							<div id="colorlib-logo"><a href="index.php">The best volunteer maker</a></div>
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
 								<li><a href="index.php">Домой</a></li>
 								<li class="">
-									<a href="profil.php">Мой профиль</a>
+									<a href="profile.php">Мой профиль</a>
 								</li>
 								<li><a href="organizations.php">Организации</a></li>
 								<li><a href="news.php">События</a></li>
@@ -77,6 +76,4 @@
 				</div>
 			</div>
 		</nav>
-=======
 	</head>
->>>>>>> 1a34b8ebb006511b69763f7e929e587c9b7591ca
