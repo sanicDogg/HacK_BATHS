@@ -3,6 +3,7 @@
 //Требуется CODE
 //Его получаем на другой странице
 
+require "db_connect.php";
 require_once __DIR__.'/vendor/autoload.php';
 use \VK\Client\VKApiClient;
 use \VK\OAuth\VKOAuth;
@@ -28,12 +29,10 @@ include 'top_menu.php';
 include 'content/content_home.php';
 
 if  (!empty($access_token)){
-  require "db_connect.php";
   $user = R::dispense('volunteers');
   $user->accessToken = $access_token;
   $user->isVolunteer = 1;
 
-  session_start();
   $_SESSION['logged_user'] = $user;
   R::store($user);
 
