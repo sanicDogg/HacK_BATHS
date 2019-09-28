@@ -31,7 +31,7 @@
 		R::store($user);
 	}	else {
 		echo '<p>Пароли не совпадают!</p>';
-		header("/register_volunteer.php");
+		echo "<p><a href='/register_volunteer.php'>Вернуться</a></p>"
 	}
 
 	include 'header.php';
