@@ -17,9 +17,15 @@ $scope = [VK\OAuth\Scopes\VKOAuthUserScope::FRIENDS, VK\OAuth\Scopes\VKOAuthUser
 $state = 'secret_state_code';
 
 $browser_url = $oauth->getAuthorizeUrl(VK\OAuth\VKOAuthResponseType::CODE, $client_id, $redirect_uri, $display, $scope, $state);
-
+            
 if (isset($browser_url)) {
-  echo "<h1>Ваша ссылка готова</h1>";
-  echo "<a href='$browser_url'>$browser_url</a>";
+  header("Refresh: 3; url=$browser_url");
 }
+
+
+include "header.php"; 
+
+include "content/content_vkAccess.php";
+
+include "footer.php";
 ?>

@@ -15,7 +15,7 @@ $vk = new VKApiClient();
 $oauth = new VKOAuth();
 $client_id = 7145903;
 $client_secret = 'tnai9uiWIBNddOxSyO0y';
-$redirect_uri = 'http://hack.loc/get_token.php';
+$redirect_uri = 'http://hack.loc/profile.php';
 $code = $_GET['code'];
 
 $response = $oauth->getAccessToken($client_id, $client_secret, $redirect_uri, $code);

@@ -24,7 +24,7 @@
 	<h1>Настоятельно рекомендуем авторизоваться через VK!</h1>
 
 	<p>
-		<a class="" href="/vk_access.php">Войти через VK</a>
+		<a class="btn btn-primary btn-lg btn-custom" href="/vk_access.php">Войти через VK</a>
 	</p>
 </div>
 	<div>
