@@ -12,7 +12,7 @@
         </div>
         <div class="col-md-6 col-md-offset-0">
           <div class="animate-box">
-            <p><a href="" class="btn btn-primary btn-lg btn-custom">Я организация</a></p>
+            <p><a href="register_organization.php" class="btn btn-primary btn-lg btn-custom">Я представитель организации</a></p>
           </div>
         </div>
         </div>
