@@ -21,6 +21,22 @@ $code = $_GET['code'];
 $response = $oauth->getAccessToken($client_id, $client_secret, $redirect_uri, $code);
 $access_token = $response['access_token'];
 
-echo '<h1>Ваш accessToken:</h1>';
-echo $access_token;
+include 'header.php';
+
+include 'top_menu.php';
+
+include 'content/content_home.php';
+
+if  (!empty($access_token)){
+  require "db_connect.php";
+  $user = R::dispense('volunteers');
+  $user->accessToken = $access_token;
+  R::store($user);
+
+
+  echo '<h1>Ваш accessToken:</h1>';
+  echo $access_token;
+} else die();
+
+include 'footer.php';
 ?>

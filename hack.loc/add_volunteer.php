@@ -14,6 +14,7 @@ $user->languages = $_GET["languages"];
 $user->exp = $_GET["exp"];
 
 $user->expKids = $_GET["expKids"];
+<<<<<<< HEAD
 $user->addSkills = $_GET["addSkills"];
 $user->expections = $_GET["expections"];
 $user->allergy = $_GET["allergy"];
@@ -21,6 +22,16 @@ $user->photoLink = $_GET["photoLink"];
 /*
 
 
+=======
+/*
+$user->addSkills = $_GET["addSkills"];
+$user->expections = $_GET["expections"];
+$user->allergy = $_GET["allergy"];
+
+
+$user->photoLink = $_GET["photoLink"];
+
+>>>>>>> 1a34b8ebb006511b69763f7e929e587c9b7591ca
 $user->whyCooperating = $_GET["whyCooperating"];
 */
 
@@ -28,9 +39,17 @@ R::store($user);
 
 	include 'header.php';
 
+<<<<<<< HEAD
+=======
+	include 'top_menu.php';
+
+>>>>>>> 1a34b8ebb006511b69763f7e929e587c9b7591ca
 	include 'content/content_home.php';
 
 	include 'footer.php';
 ?>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 1a34b8ebb006511b69763f7e929e587c9b7591ca

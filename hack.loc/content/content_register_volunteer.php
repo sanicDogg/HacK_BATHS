@@ -1,4 +1,15 @@
 <section id="home" class="video-hero" style="height: 700px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
+<div style="
+	padding: 150px;
+	padding-bottom: 0;
+	text-align: center;
+" class="row">
+	<h1>Настоятельно рекомендуем авторизоваться через VK!</h1>
+
+	<p>
+		<a class="" href="/vk_access.php">Войти через VK</a>
+	</p>
+</div>
 <div class="overlay"></div>
 			<div class="display-t display-t2 text-center">
 				<div class="display-tc display-tc2">
