@@ -31,6 +31,7 @@
 							<p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person1.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p>
 						</article>
 					</div>
+					<?endforeach;?>
 				</div>
 
 				<div class="row">
@@ -47,4 +48,3 @@
 				</div>
 			</div>
 		</div>
-<?endforeach;?>
