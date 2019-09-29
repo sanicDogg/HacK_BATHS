@@ -205,56 +205,6 @@ if (!empty($_SESSION['logged_user'])):
 			</div>
 			<?endif;?>
 
-
-			 <? /*
-
-      <div class="col-md-12 text-center animate-box fadeInUp animated-fast">
-        <div class="services">
-					<h2>Информация о текущем пользователе:</h2>
-					<p>Имя:</p>
-					<p><?echo $response[0]["first_name"];?></p>
-					<p>Фамилия:</p>
-					<p><?echo $response[0]["last_name"];?></p>
-					<?
-						//print_r($response);
-					?>
-
-					<div class="col-md-4">
-						<img src="<?echo $response[0]['photo_200']?>">
-					</div>
-
-					<div class="col-md-4">
-						<p>Город: <?echo $response[0]['city']['title']?></p>
-					</div>
-
-					<div class="col-md-4">
-						<p>Дата рождения: <?echo $response[0]['bdate']?></p>
-					</div>
-
-					<div class="col-md-4">
-						<p>Деятельность: <?echo $response[0]['activities']?></p>
-					</div>
-
-					<div class="col-md-4">
-						<p>Ссылки на соц сети: <?echo $response[0]['exports']?></p>
-					</div>
-
-					<div class="col-md-4">
-						<p>Сейчас в сети:
-							<?if ($response[0]['online'] == 0) echo "нет";
-								else echo "да";
-							?>
-						</p>
-					</div>
-        </div>
-      </div>
-      <?endif;?>
-    </div>
-  </div>
-</div>
-
-*/?>
-
 <?else:?>
 
 <div style="" class="colorlib-services colorlib-bg-white">
