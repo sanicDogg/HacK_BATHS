@@ -16,7 +16,7 @@
 		R::store($user);
 
 	include 'header.php';
-	include 'content/content_profile.php';
+	include 'content/content_home.php';
 
 	include 'footer.php';
 ?>
