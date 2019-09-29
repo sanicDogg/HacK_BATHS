@@ -3,7 +3,7 @@
 
 	if (isset($data['log_in'])) {
 		$organization = R::findOne('organizations', 'login = ?', array($data["login"]));
-		if ($user) {
+		if ($organization) {
 			if ($data['password'] == $organization->password) {
 				$_SESSION['logged_user'] = $organization;
 			} else  {
