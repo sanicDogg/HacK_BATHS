@@ -29,18 +29,18 @@
 			<input type="text" id="" class="form-control" name="name" placeholder="Введите название организации">
 		</div>
 	</div>
+
 	<div class="row form-group">
 		<div class="col-md-6">
 			<input type="text" id="" class="form-control" name="email" placeholder="Введите e-mail">
 		</div>
 	</div>
-
+	
 	<div class="row form-group">
 		<div class="col-md-6">
 			<input type="tel" id="" class="form-control" name="contact_phone" placeholder="Номер телефона. Пример: 89992225040"  maxlength="11">
 		</div>
 	</div>
-
 
 	<div class="form-group">
 		<input type="submit" value="Отправить" class="btn btn-primary">
