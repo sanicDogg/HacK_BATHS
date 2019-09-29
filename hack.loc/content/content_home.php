@@ -1,3 +1,8 @@
+<?php
+	$events = R::findAll('events');
+	$events = array_reverse($events);
+?>
+
 <section id="home" class="video-hero" style="height: 700px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
 <div class="overlay"></div>
   <a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=HBXfOInHBlo',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>
@@ -110,30 +115,18 @@
       </div>
     </div>
     <div class="row">
+      <?
+      foreach($events as $item):
+      ?>
       <div class="col-md-4 animate-box">
         <article>
-          <h2>Building the Mention Sales Application on Unapp</h2>
-          <p class="admin"><span>May 12, 2018</span></p>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-          <p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person1.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p>
+          <h2><a href="#"><?echo $item["name"];?></a></h2>
+          <p class="admin"><span><?echo $item["date"]?></span></p>
+          <p><?echo $item["description"]?></p>
+          <p class="author-wrap"> <a href="#" class="author">Политехнический музей, создано <?echo $item["date_of_publicating"]?></a></p>
         </article>
       </div>
-      <div class="col-md-4 animate-box">
-        <article>
-          <h2>Building the Mention Sales Application on Unapp</h2>
-          <p class="admin"><span>May 12, 2018</span></p>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-          <p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person2.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p>
-        </article>
-      </div>
-      <div class="col-md-4 animate-box">
-        <article>
-          <h2>Building the Mention Sales Application on Unapp</h2>
-          <p class="admin"><span>May 12, 2018</span></p>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-          <p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person3.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p>
-        </article>
-      </div>
+      <?endforeach;?>
     </div>
   </div>
 </div>
