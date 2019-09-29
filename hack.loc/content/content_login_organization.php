@@ -2,15 +2,15 @@
 	$data = $_POST;
 
 	if (isset($data['log_in'])) {
-		$user = R::findOne('volunteers', 'email = ?', array($data["email"]));
+		$organization = R::findOne('organizations', 'login = ?', array($data["login"]));
 		if ($user) {
-			if ($data['password'] == $user->password) {
-				$_SESSION['logged_user'] = $user;
+			if ($data['password'] == $organization->password) {
+				$_SESSION['logged_user'] = $organization;
 			} else  {
 				echo "Неверный пароль";
 			}
 		} else {
-			echo "Пользователя с таким логином не существует";
+			echo "Зарегистрированной организация с таким логином не существует";
 		}
 	}
 
@@ -51,7 +51,7 @@
 	</div>
 	<div class="row form-group">
 		<div class="col-md-6">
-			<input type="text" id="lname" class="form-control" name="email" placeholder="Введите e-mail">
+			<input type="text" id="lname" class="form-control" name="login" placeholder="Введите логин">
 		</div>
 	</div>
 	<div class="row form-group">
