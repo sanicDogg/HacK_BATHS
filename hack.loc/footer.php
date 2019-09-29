@@ -29,6 +29,7 @@ $events = array_reverse($events);
 					<div class="col-md-3 colorlib-widget">
 						<h4>Свежее</h4>
 						<?
+						$i = 0;
 						foreach($events as $item):
 						?>
 						<div class="f-blog">
