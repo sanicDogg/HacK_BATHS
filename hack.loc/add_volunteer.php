@@ -1,9 +1,24 @@
 <?php
+require "db_connect.php";
+if (!empty($_SESSION['logged_user'])) {
+	//Определяем, волонтер ли вошел или организация
+	if ($_SESSION['logged_user']->isVolunteer == 0) {
 
-	require "db_connect.php";
-	if ($_POST["password"] == $_POST["password2"])
+	} else {
+		$id = $_SESSION['logged_user']->id;
+		$user = R::load('volunteers', $id);
+	}
+}
+//Если совпадают пароли или мы залогинены как волонтер
+	if ($_POST["password"] == $_POST["password2"] || $_SESSION['logged_user']->isVolunteer == 1)
 	{
-		$user = R::dispense('volunteers');
+		if ($_POST["password"] == $_POST["password2"]){
+			$user = R::dispense('volunteers');
+		}
+
+		if ($_SESSION['logged_user']->isVolunteer == 1) {
+				$user = R::load('volunteers', $_SESSION['logged_user']->id);
+		}
 
 		$user->fio = $_POST["fio"];
 		$user->dateOfBirth = $_POST["dateOfBirth"];
@@ -24,10 +39,9 @@
 		$user->isVolunteer = 1;
 		$user->date_of_registration = date("d/m/Y");
 
-		$_SESSION['logged_user'] = $user;
-		/*
-		$user->whyCooperating = $_GET["whyCooperating"];
-		*/
+		if ($_POST["password"] == $_POST["password2"]){
+			$_SESSION['logged_user'] = $user;
+		}
 
 		R::store($user);
 	}	else {
