@@ -27,12 +27,18 @@
 			<input type="text" id="" class="form-control" name="name" placeholder="Введите название события">
 		</div>
 	</div>
+
 	<div class="row form-group">
 		<div class="col-md-12">
 			<textarea rows="4" type="text" id="" class="form-control" name="description" placeholder="Описание"></textarea>
 		</div>
 	</div>
 
+	<div class="row form-group">
+		<div class="col-md-6">
+			<input type="text" id="" class="form-control" name="fotoLink" placeholder="Вставьте ссылку на картинку карточки">
+		</div>
+	</div>
 
 	<div class="row form-group">
 		<div class="col-md-6">

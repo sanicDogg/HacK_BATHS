@@ -36,7 +36,7 @@
             <i class="icon-browser"></i>
           </span>
           <div class="desc">
-            <h3>Создайте свою страницу волонтера</h3>
+            <h3>Создайте свою карточку волонтера</h3>
             <p>Присоединитесь к огромному сообществу волонтеров и сделайте мир добрее.</p>
           </div>
         </div>
@@ -78,7 +78,7 @@
           <div class="counter-entry">
             <span class="icon"><i class="flaticon-ribbon"></i></span>
             <div class="desc">
-              <span class="colorlib-counter js-counter" data-from="0" data-to="4" data-speed="5000" data-refresh-interval="50"></span>
+              <span class="colorlib-counter js-counter" data-from="0" data-to="2" data-speed="5000" data-refresh-interval="50"></span>
               <span class="colorlib-counter-label">Волонтеры работающие с нами</span>
             </div>
           </div>
