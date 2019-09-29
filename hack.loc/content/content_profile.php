@@ -108,8 +108,108 @@ if (!empty($_SESSION['logged_user'])):
 			    <div class="colorlib-blog">
 			      <div class="container">
 			        <div class="row">
-								<?foreach($volunteers as $item):
+								<?
+								//Если передан параметр id
+								if (!empty($_GET["id"])):
+									$user = R::load('volunteers', $_GET["id"]);
+									$access_token = $user->access_token;
+									$vk = new \VK\Client\VKApiClient();
+									$response = $vk->users()->get($access_token, array());
 
+									$response = $vk->users()->get($access_token,
+									array('user_ids' => array($response[0]["id"]),
+											'fields' => array('city', 'about', 'activities', 'sex', 'bdate', 'contacts',
+																					'exports', 'online', 'photo_200', 'relation', 'status')));
+
+								?>
+
+								<div class="col-md-4 text-center animate-box fadeInUp animated-fast">
+								<div class="container">
+								<div id="main">
+
+								 <div class="row" id="real-estates-detail">
+								 <div class="col-lg-4 col-md-4 col-xs-12">
+								 <div class="panel panel-default">
+								 <div class="panel-heading">
+								 <header class="panel-title">
+								 <div class="text-center">
+								 <strong>Волонтер</strong>
+								 </div>
+								 </header>
+								 </div>
+								 <div class="panel-body">
+								 <div class="text-center" id="author">
+								 <img src="<?echo $response[0]['photo_200']?>">
+								 <h3><?echo $response[0]["first_name"]." ".$response[0]["last_name"];?></h3>
+								 <small class="label label-warning">Российская Федерация</small>
+								 <p><?echo $user->expections;?></p>
+								 </div>
+								 </div>
+								 </div>
+								 </div>
+								 <div class="col-lg-8 col-md-8 col-xs-12">
+								 <div class="panel">
+								 <div class="panel-body">
+								 <ul id="myTab" class="nav nav-pills">
+								 <li class="active"><a href="#detail" data-toggle="tab">О пользователе</a></li>
+								 <li class=""><a href="#contact" data-toggle="tab">Анкета</a></li>
+								 </ul>
+								 <div id="myTabContent" class="tab-content">
+								<hr>
+								 <div class="tab-pane fade active in" id="detail">
+								 <h4>История профиля</h4>
+								 <table class="table table-th-block">
+								 <tbody>
+								 <tr><td class="active">Зарегистрирован:</td><td><?echo $user->date_of_registration?></td></tr>
+								 <tr><td class="active">Последняя активность:</td><td>12-06-2016 / 09:11</td></tr>
+								 <tr><td class="active">Страна:</td><td>Россия</td></tr>
+								 <tr><td class="active">Город:</td><td><?echo $response[0]['city']['title']?></td></tr>
+								 <tr><td class="active">Пол:</td><td>
+									 	<?if ($response[0]['sex'] == 1) echo "женский";
+											if ($response[0]['sex'] == 2) echo "мужской";
+											if ($response[0]['sex'] == 1) echo "не указан";?>
+								 </td></tr>
+								 <tr><td class="active">Дата рождения:</td><td><?echo $response[0]['bdate']?></td></tr>
+								 <tr><td class="active">Семейное положение:</td><td>
+									 <?if ($response[0]['relation'] == 1) echo "не женат/не замужем";
+										 if ($response[0]['relation'] == 2) echo "есть друг/есть подруга";
+										 if ($response[0]['relation'] == 3) echo "помолвлен/помолвлена";
+										 if ($response[0]['relation'] == 4) echo "женат/замужем";
+										 if ($response[0]['relation'] == 5) echo "всё сложно";
+										 if ($response[0]['relation'] == 6) echo "в активном поиске";
+										 if ($response[0]['relation'] == 7) echo "влюблён/влюблена";
+										 if ($response[0]['relation'] == 8) echo "в гражданском браке";
+										 if ($response[0]['relation'] == 0) echo "не указано";
+										 ?>
+								 </td></tr>
+								 <tr><td class="active">Доброкоины:</td><td>4/5</td></tr>
+								</tbody>
+								 </table>
+								 </div>
+								 <div class="tab-pane fade" id="contact">
+								 <p>email: <?echo $user->email?></p>
+								 <p>Номер телефона: <?echo $user->phone_num?></p>
+								 <p>Ссылка на соц сеть: <?echo $user->vk_link?></p>
+								 <p>Место учебы/работы: <?echo $user->place_of_study?></p>
+								 <p>Специальность: <?echo $user->specialty?></p>
+								 <p>Языки: <?echo $user->languages?></p>
+								 <p>Опыт работы волонтером: <?echo $user->exp?></p>
+								 <p>Опыт работы с детьми: <?echo $user->exp?></p>
+								 <p>Дополнительные навыки: <?echo $user->add_skills?></p>
+								 <p>Ожидания от волонтерства: <?echo $user->expections?></p>
+								 <p>Аллергии: <?echo $user->allergy?></p>
+								 <p><a href="register_event.php" class="btn btn-primary btn-lg btn-custom">Пригласить на работу</a></p>
+							 	 </div>
+							 </div>
+						 		</div>
+							</div>
+						</div>
+
+								 <?endif;?>
+								 <?
+								//Вывод карточек волонтеров без access_token
+								?>
+								<?foreach($volunteers as $item):
 									if (!empty($item->access_token)):
 										$access_token = $item->access_token;
 										$vk = new \VK\Client\VKApiClient();
@@ -124,7 +224,7 @@ if (!empty($_SESSION['logged_user'])):
 			            <div class="staff-entry">
 			              <a href="https://vk.com/id<?echo $response[0]["id"]?>" class="staff-img" style="background-image: url(<?echo $response[0]['photo_200']?>);"></a>
 			                <div class="desc">
-			                 <h3><?echo $response[0]["first_name"]." ".$response[0]["last_name"];?></h3>
+			                 <h3><a href="/profile.php?id=<?echo $item["id"]?>"><?echo $response[0]["first_name"]." ".$response[0]["last_name"];?></a></h3>
 			                <span>волонтер</span>
 			                <p><?echo $item->expections?></p>
 			                </div>
@@ -136,8 +236,8 @@ if (!empty($_SESSION['logged_user'])):
 			            <div class="staff-entry">
 			              <a href="<?echo $item["vk_link"]?>" class="staff-img" style="background-image: url(<?echo $item['photo_link']?>);"></a>
 			                <div class="desc">
-			                 <h3><?echo $item["fio"];?></h3>
-			                <span>IT евангелист, дизайнер</span>
+				                 <h3><a href="/profile.php?id=<?echo $item["id"]?>"><?echo $item["fio"];?></a></h3>
+			                <span>волонтер</span>
 			                <p><?echo $item["expections"]?></p>
 			                </div>
 			            </div>
