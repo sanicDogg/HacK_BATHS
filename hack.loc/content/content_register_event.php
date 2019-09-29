@@ -36,7 +36,7 @@
 
 	<div class="row form-group">
 		<div class="col-md-6">
-			<input type="text" id="" class="form-control" name="fotoLink" placeholder="Вставьте ссылку на картинку карточки">
+			<input type="text" id="" class="form-control" name="img_link" placeholder="Вставьте ссылку на картинку карточки">
 		</div>
 	</div>
 
