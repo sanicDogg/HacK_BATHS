@@ -51,33 +51,55 @@ if (!empty($_SESSION['logged_user'])):
             ?>
           <img src="<?echo $photo_link;?>" width="200" height="200">
           </p>
-        <?endif;?>
         </div>
       </div>
-      <? if (!empty($_SESSION['logged_user']->access_token)):?>
-      <div class="col-md-4 text-center animate-box fadeInUp animated-fast">
+			<?endif;?>
+      <? if (!empty($_SESSION['logged_user']->access_token)):
+				$access_token = $user->access_token;
+				$vk = new \VK\Client\VKApiClient();
+				$response = $vk->users()->get($access_token, array());
+			?>
+      <div class="col-md-12 text-center animate-box fadeInUp animated-fast">
         <div class="services">
-          <p>
-            <?php
-                $access_token = $user->access_token;
-                $vk = new \VK\Client\VKApiClient();
-                $response = $vk->users()->get($access_token, array());
-            ?>
-          </p>
-        </div>
-      </div>
-      <div class="col-md-4 text-center animate-box fadeInUp animated-fast">
-        <div class="services">
-            <h2>Информация о текущем пользователе:</h2>
-            <p>Имя:</p>
-            <p><?echo $response[0]["first_name"];?></p>
-            <p>Фамилия:</p>
-            <p><?echo $response[0]["last_name"];?></p>
-            <? $response = $vk->users()->get($access_token,
-              array('user_ids' => array($response[0]["id"]),
-                'fields' => array('city', 'about', 'activities')));
-              print_r($response);
-            ?>
+					<h2>Информация о текущем пользователе:</h2>
+					<p>Имя:</p>
+					<p><?echo $response[0]["first_name"];?></p>
+					<p>Фамилия:</p>
+					<p><?echo $response[0]["last_name"];?></p>
+					<? $response = $vk->users()->get($access_token,
+						array('user_ids' => array($response[0]["id"]),
+							'fields' => array('city', 'about', 'activities', 'bdate', 'contacts',
+																	'exports', 'online', 'photo_200')));
+						//print_r($response);
+					?>
+
+					<div class="col-md-4">
+						<img src="<?echo $response[0]['photo_200']?>">
+					</div>
+
+					<div class="col-md-4">
+						<p>Город: <?echo $response[0]['city']['title']?></p>
+					</div>
+
+					<div class="col-md-4">
+						<p>Дата рождения: <?echo $response[0]['bdate']?></p>
+					</div>
+
+					<div class="col-md-4">
+						<p>Деятельность: <?echo $response[0]['activities']?></p>
+					</div>
+
+					<div class="col-md-4">
+						<p>Ссылки на соц сети: <?echo $response[0]['exports']?></p>
+					</div>
+
+					<div class="col-md-4">
+						<p>Сейчас в сети:
+							<?if ($response[0]['online'] == 0) echo "нет";
+								else echo "да";
+							?>
+						</p>
+					</div>
         </div>
       </div>
       <?endif;?>
