@@ -114,7 +114,9 @@ if (!empty($_SESSION['logged_user'])):
     <div class="row">
       <div class="col-md-4 text-center animate-box fadeInUp animated-fast">
         <div class="services">
-            <p>Вы не авторизованы!!!</p>
+          <div class="animate-box">
+                <h2>Вы не авторизованы!!!</h2>
+          </div>
         </div>
       </div>
     </div>

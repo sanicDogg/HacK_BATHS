@@ -8,9 +8,7 @@
   require "db_connect.php";
 
   include 'header.php';
-/*
-	include 'top_menu.php';
-*/
+
 	include 'content/content_profile.php';
 
 	include 'footer.php'; 

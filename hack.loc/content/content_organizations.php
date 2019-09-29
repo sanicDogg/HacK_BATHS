@@ -5,8 +5,8 @@
 					<div class="container">
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
-								<h2>Services</h2>
-								<p class="breadcrumbs"><span><a href="index.html">Home</a></span> <span>Services</span></p>
+								<h2>Организации</h2>
+								<p class="breadcrumbs"><span><a href="index.php">Домой</a></span> <span>Организации</span></p>
 							</div>
 						</div>
 					</div>
@@ -20,66 +20,11 @@
 					<div class="col-md-4 text-center animate-box">
 						<div class="services">
 							<span class="icon">
-								<i class="icon-browser"></i>
-							</span>
-							<div class="desc">
-								<h3>Create your own template</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center animate-box">
-						<div class="services">
-							<span class="icon">
 								<i class="icon-download"></i>
 							</span>
 							<div class="desc">
-								<h3>Automatic Backup Data</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center animate-box">
-						<div class="services">
-							<span class="icon">
-								<i class="icon-layers"></i>
-							</span>
-							<div class="desc">
-								<h3>Page Builder</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center animate-box">
-						<div class="services">
-							<span class="icon">
-								<i class="icon-video"></i>
-							</span>
-							<div class="desc">
-								<h3>Watch tutorial</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center animate-box">
-						<div class="services">
-							<span class="icon">
-								<i class="icon-gears"></i>
-							</span>
-							<div class="desc">
-								<h3>Help &amp; Support</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center animate-box">
-						<div class="services">
-							<span class="icon">
-								<i class="icon-adjustments"></i>
-							</span>
-							<div class="desc">
-								<h3>Lots of features</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<h3>Политехнический музей</h3>
+								<p>Политехнический музей — один из крупнейших научно-технических музеев мира. Он был создан на основе фондов Политехнической выставки 1872 года по инициативе Общества любителей естествознания, антропологии и этнографии.</p>
 							</div>
 						</div>
 					</div>
