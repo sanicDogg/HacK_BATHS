@@ -210,7 +210,7 @@ if (!empty($_SESSION['logged_user'])):
 			 <img src="<?echo $response[0]['photo_200']?>">
 			 <h3><?echo $response[0]["first_name"]." ".$response[0]["last_name"];?></h3>
 			 <small class="label label-warning">Российская Федерация</small>
-			 <p><?echo $response[0]["status"];?></p>
+			 <p><?echo $user->expections;?></p>
 			 </div>
 			 </div>
 			 </div>
@@ -256,6 +256,14 @@ if (!empty($_SESSION['logged_user'])):
 			 </div>
 			 <div class="tab-pane fade" id="contact">
 			 <p></p>
+
+			 <?
+			 		//Проверка на заполненность анкеты
+
+					if (empty($user->email)):
+			 ?>
+
+
 			 <form style="" method="POST" action="/add_volunteer.php">
 			 	<div>
 			 		<p align="center" style="font-size: 27px">Заполните анкету и получите 10 доброкоинов!</p>
@@ -395,6 +403,9 @@ if (!empty($_SESSION['logged_user'])):
 			 	</div>
 			 </form>
 
+			 <?else:?>
+			 <div><h3>Спасибо за заполнение анкеты. Доброкоины зачислены на ваш баланс)</h3></div>
+			 <?endif;?>
 			 </div>
 			 </div>
 			 </div>
