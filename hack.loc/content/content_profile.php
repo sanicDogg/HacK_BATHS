@@ -246,7 +246,7 @@ if (!empty($_SESSION['logged_user'])):
 								<?endforeach?>
 			        </div>
 
-			        <div class="row">
+<!-- 			        <div class="row">
 			          <div class="col-md-12 text-center">
 			            <ul class="pagination">
 			              <li class="disabled"><a href="#">&laquo;</a></li>
@@ -257,9 +257,8 @@ if (!empty($_SESSION['logged_user'])):
 			              <li><a href="#">&raquo;</a></li>
 			            </ul>
 			          </div>
-			        </div>
-			      </div>
-			    </div>
+			        </div> -->
+	
 			<? //Если вошел без ВК
 			elseif (empty($_SESSION['logged_user']->access_token)):
 			?>
@@ -506,7 +505,7 @@ if (!empty($_SESSION['logged_user'])):
 			 <?else:?>
 			 <div><h3>Спасибо за заполнение анкеты. Доброкоины зачислены на ваш баланс)</h3></div>
 			 <?endif;?>
-			 </div>
+
 			 </div>
 			 </div>
 			 </div>
@@ -518,7 +517,7 @@ if (!empty($_SESSION['logged_user'])):
 </div>
 </div>
 </div>
-</div>
+
 <?
 	endif;
 ?>
