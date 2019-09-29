@@ -31,7 +31,7 @@ if ($_GET["logout"] == 1) {
         <div class="row">
           <div class="col-md-4 text-center animate-box">
             <div class="staff-entry">
-              <a href="#" class="staff-img" style="background-image: url(images/pxkKrN3vsCQ.jpg);"></a>
+              <a href="https://vk.com/idlani_ka_nani" class="staff-img" style="background-image: url(images/pxkKrN3vsCQ.jpg);"></a>
                 <div class="desc">
                  <h3>Виталий Гайнуллин</h3>
                 <span>IT евангелист, дизайнер</span>
@@ -47,9 +47,8 @@ if ($_GET["logout"] == 1) {
               <span>Камитан, программист</span>
               <p>Небольшой мальчуган-гений. Написал сайт стоящий 20к в одиночку и не попросил денег.</p>
             </div>
+           </div>
           </div>
-        </div>
-          
         </div>
 
         <div class="row">
