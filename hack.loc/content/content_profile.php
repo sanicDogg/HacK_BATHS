@@ -139,7 +139,7 @@ if (!empty($_SESSION['logged_user'])):
 			 <h4>История профиля</h4>
 			 <table class="table table-th-block">
 			 <tbody>
-			 <tr><td class="active">Зарегистрирован:</td><td>12-06-2016</td></tr>
+			 <tr><td class="active">Зарегистрирован:</td><td><?echo $user->date_of_registration?></td></tr>
 			 <tr><td class="active">Последняя активность:</td><td>12-06-2016 / 09:11</td></tr>
 			 <tr><td class="active">Страна:</td><td>Россия</td></tr>
 			 <tr><td class="active">Город:</td><td><?echo $response[0]['city']['title']?></td></tr>
