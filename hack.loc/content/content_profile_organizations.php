@@ -19,6 +19,11 @@ if ($_GET["logout"] == 1) {
               <div class="animate-box">
                 <h2>Волонтеры</h2>
                 <p class="breadcrumbs"><span><a href="index.php">Домой</a></span> <span>Карточки волонтеров</span></p>
+                            <div class="col-md-12 col-md-offset-0">
+              <div class="animate-box">
+                <p><a href="register_event.php" class="btn btn-primary btn-lg btn-custom">Создать событие</a></p>
+              </div>
+            </div>
               </div>
             </div>
           </div>
