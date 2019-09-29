@@ -1,12 +1,12 @@
  <?
   require "db_connect.php";
   $data = $_POST;
-  $user = R::dispense('organizations');
+  $organization = R::dispense('organizations');
 
-  $user->name = $data["name"];
-  $user->contact_phone = $data["contact_phone"];
-  $user->email = $data["email"];
-  $user->isVolunteer = 0;
+  $organization->name = $data["name"];
+  $organization->contact_phone = $data["contact_phone"];
+  $organization->email = $data["email"];
+  $organization->isVolunteer = 0;
 
-  R::store($user);
+  R::store($organization);
 ?>
