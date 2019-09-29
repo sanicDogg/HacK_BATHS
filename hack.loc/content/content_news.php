@@ -28,7 +28,7 @@
 							<h2><a href="#"><?echo $item["name"];?></a></h2>
 							<p class="admin"><span><?echo $item["date"]?></span></p>
 							<p><?echo $item["description"]?></p>
-							<p class="author-wrap"> <a href="#" class="author">Политехнический музей, создано <br> <?echo $item["date_of_publicating"]?></a></p>
+							<p class="author-wrap"> <a href="#" class="author">Политехнический музей, создано <?echo $item["date_of_publicating"]?></a></p>
 						</article>
 					</div>
 					<?endforeach;?>
