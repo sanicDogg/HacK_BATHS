@@ -21,7 +21,7 @@
 	<div>
 		<p align="center" style="font-size: 27px">Заполните поля</p>
 	</div>
-<div align="center">
+<div>
 	<div class="row form-group">
 		<div class="col-md-6">
 			<input type="text" id="" class="form-control" name="name" placeholder="Введите название события">
@@ -36,10 +36,10 @@
 
 	<div class="row form-group">
 		<div class="col-md-6">
+			<h3>Дата проведения:</h3>
 			<input type="date" id="" class="form-control" name="data" placeholder="Дата проведения" maxlength="10">
 		</div>
 	</div>
-
 
 	<div class="form-group">
 		<input type="submit" value="Создать" class="btn btn-primary">
