@@ -22,6 +22,7 @@
 		$user->photoLink = $_POST["photoLink"];
 		$user->password = $_POST["password"];
 		$user->isVolunteer = 1;
+		$user->date_of_registration = date("d/m/Y");
 
 		$_SESSION['logged_user'] = $user;
 		/*

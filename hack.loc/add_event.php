@@ -6,7 +6,8 @@
 
 		$event->name = $_POST["name"];
 		$event->description = $_POST["description"];
-		$event->data = $_POST["data"];
+		$event->date = $_POST["date"];
+		$event->date_of_publicating = date("d/m/Y");
 		R::store($event);
 
 	include 'header.php';

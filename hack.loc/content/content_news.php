@@ -26,7 +26,7 @@
 					<div class="col-md-4 animate-box">
 						<article>
 							<h2><a href="#"><?echo $item["name"];?></a></h2>
-							<p class="admin"><span><?echo $item["data"]?></span></p>
+							<p class="admin"><span><?echo $item["date"]?></span></p>
 							<p><?echo $item["description"]?></p>
 							<p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person1.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p>
 						</article>
