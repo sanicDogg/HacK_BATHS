@@ -125,7 +125,7 @@ if (!empty($_SESSION['logged_user'])):
 			              <a href="https://vk.com/id<?echo $response[0]["id"]?>" class="staff-img" style="background-image: url(<?echo $response[0]['photo_200']?>);"></a>
 			                <div class="desc">
 			                 <h3><?echo $response[0]["first_name"]." ".$response[0]["last_name"];?></h3>
-			                <span>IT евангелист, дизайнер</span>
+			                <span>волонтер</span>
 			                <p><?echo $item->expections?></p>
 			                </div>
 			            </div>
