@@ -126,7 +126,11 @@
           <p class="author-wrap"> <a href="#" class="author">Политехнический музей, создано <?echo $item["date_of_publicating"]?></a></p>
         </article>
       </div>
-      <?endforeach;?>
+      <?
+        $i++;
+        if($i==3)break;
+        endforeach;
+      ?>
     </div>
   </div>
 </div>
