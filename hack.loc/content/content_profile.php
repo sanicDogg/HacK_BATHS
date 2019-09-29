@@ -103,29 +103,33 @@ if (!empty($_SESSION['logged_user'])):
 			      </div>
 			    </section>
 
+					<? //Подгружаем всех волонтеров из базы
+						$volunteers = R::findAll('volunteers');
+					?>
 			    <div class="colorlib-blog">
 			      <div class="container">
 			        <div class="row">
+								<?foreach($volunteers as $item):
+									$access_token = $item->access_token;
+									$vk = new \VK\Client\VKApiClient();
+									$response = $vk->users()->get($access_token, array());
+
+									$response = $vk->users()->get($access_token,
+									array('user_ids' => array($response[0]["id"]),
+											'fields' => array('city', 'about', 'activities', 'sex', 'bdate', 'contacts',
+																					'exports', 'online', 'photo_200', 'relation', 'status')));
+								?>
 			          <div class="col-md-4 text-center animate-box">
 			            <div class="staff-entry">
-			              <a href="https://vk.com/idlani_ka_nani" class="staff-img" style="background-image: url(images/pxkKrN3vsCQ.jpg);"></a>
+			              <a href="https://vk.com/<?echo $response[0]["id"]?>" class="staff-img" style="background-image: url(<?echo $response[0]['photo_200']?>);"></a>
 			                <div class="desc">
-			                 <h3>Виталий Гайнуллин</h3>
+			                 <h3><?echo $response[0]["first_name"]." ".$response[0]["last_name"];?></h3>
 			                <span>IT евангелист, дизайнер</span>
 			                <p>Парень, хорошо работающий языком и это не то, о чем вы возможно подумали.</p>
 			                </div>
 			            </div>
 			          </div>
-			                  <div class="col-md-4 text-center animate-box">
-			          <div class="staff-entry">
-			            <a href="#" class="staff-img" style="background-image: url(images/2QC-qIJeYH4.jpg);"></a>
-			            <div class="desc">
-			              <h3>Александр Молитвин</h3>
-			              <span>Камитан, программист</span>
-			              <p>Небольшой мальчуган-гений. Написал сайт стоящий 20к в одиночку и не попросил денег.</p>
-			            </div>
-			           </div>
-			          </div>
+								<?endforeach?>
 			        </div>
 
 			        <div class="row">
@@ -367,22 +371,11 @@ if (!empty($_SESSION['logged_user'])):
 			 		</div>
 			 	</div>
 
-			     <div class="row form-group">
+	     <div class="row form-group">
 			 		<div class="col-md-12">
 			 			<input type="text" id="" class="form-control" name="photoLink" placeholder="Ссылка на Ваше фото">
 			 		</div>
-			     </div>
-
-			 <div class="row form-group">
-			 		<div class="col-md-12">
-			 			<input type="password" id="" class="form-control" name="password" placeholder="Пароль">
-			 		</div>
-			     </div>
-			 <div class="row form-group">
-			 		<div class="col-md-12">
-			 			<input type="password" id="" class="form-control" name="password2" placeholder="Повторите пароль">
-			 		</div>
-			     </div>
+	     </div>
 			 	<div class="form-group">
 			 		<input type="submit" value="Отправить" class="btn btn-primary">
 			 	</div>
