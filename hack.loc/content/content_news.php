@@ -1,5 +1,6 @@
 <?php
 	$events = R::findAll('events');
+	$events = array_reverse($events);
 ?>
 <section id="home" class="video-hero" style="height: 500px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
 		<div class="overlay"></div>
