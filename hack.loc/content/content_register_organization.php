@@ -8,7 +8,7 @@
 			<div class="container">
 				<div class="col-md-12 col-md-offset-0">
 					<div class="animate-box">
-						<h2>Регистрация</h2>
+						<h2>Регистрация организации</h2>
 						<p class="breadcrumbs"><span><a href="index.php">Домой</a></span> <span>Регистрация</span></p>
 					</div>
 				</div>
@@ -26,7 +26,7 @@
 <div align="center">
 	<div class="row form-group">
 		<div class="col-md-6">
-			<input type="text" id="fname" class="form-control" name="fio" placeholder="Введите название организации">
+			<input type="text" id="fname" class="form-control" name="name" placeholder="Введите название организации">
 		</div>
 	</div>
 	<div class="row form-group">
