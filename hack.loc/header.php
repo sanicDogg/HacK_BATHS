@@ -20,6 +20,8 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
+	<link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
+
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
 
