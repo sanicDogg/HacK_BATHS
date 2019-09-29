@@ -110,18 +110,20 @@ if (!empty($_SESSION['logged_user'])):
 			      <div class="container">
 			        <div class="row">
 								<?foreach($volunteers as $item):
-									$access_token = $item->access_token;
-									$vk = new \VK\Client\VKApiClient();
-									$response = $vk->users()->get($access_token, array());
 
-									$response = $vk->users()->get($access_token,
-									array('user_ids' => array($response[0]["id"]),
-											'fields' => array('city', 'about', 'activities', 'sex', 'bdate', 'contacts',
-																					'exports', 'online', 'photo_200', 'relation', 'status')));
+									if (!empty($item->access_token)):
+										$access_token = $item->access_token;
+										$vk = new \VK\Client\VKApiClient();
+										$response = $vk->users()->get($access_token, array());
+
+										$response = $vk->users()->get($access_token,
+										array('user_ids' => array($response[0]["id"]),
+												'fields' => array('city', 'about', 'activities', 'sex', 'bdate', 'contacts',
+																						'exports', 'online', 'photo_200', 'relation', 'status')));
 								?>
 			          <div class="col-md-4 text-center animate-box">
 			            <div class="staff-entry">
-			              <a href="https://vk.com/<?echo $response[0]["id"]?>" class="staff-img" style="background-image: url(<?echo $response[0]['photo_200']?>);"></a>
+			              <a href="https://vk.com/id<?echo $response[0]["id"]?>" class="staff-img" style="background-image: url(<?echo $response[0]['photo_200']?>);"></a>
 			                <div class="desc">
 			                 <h3><?echo $response[0]["first_name"]." ".$response[0]["last_name"];?></h3>
 			                <span>IT евангелист, дизайнер</span>
@@ -129,6 +131,19 @@ if (!empty($_SESSION['logged_user'])):
 			                </div>
 			            </div>
 			          </div>
+								<?else: ?>
+
+								<div class="col-md-4 text-center animate-box">
+			            <div class="staff-entry">
+			              <a href="<?echo $item["vk_link"]?>" class="staff-img" style="background-image: url(<?echo $item['photo_link']?>);"></a>
+			                <div class="desc">
+			                 <h3><?echo $item["fio"];?></h3>
+			                <span>IT евангелист, дизайнер</span>
+			                <p><?echo $item["expections"]?></p>
+			                </div>
+			            </div>
+			          </div>
+								<?endif?>
 								<?endforeach?>
 			        </div>
 
