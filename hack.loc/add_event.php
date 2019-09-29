@@ -1,19 +1,13 @@
 <?php
 
-	require "db_connect.php";
+		require "db_connect.php";
 
-		$user = R::dispense('events');
+		$event = R::dispense('events');
 
-		$user->name = $_POST["name"];
-		$user->description = $_POST["description"];
-		$user->data = $_POST["data"];
-
-		$_SESSION['logged_user'] = $user;
-		/*
-		$user->whyCooperating = $_GET["whyCooperating"];
-		*/
-
-		R::store($user);
+		$event->name = $_POST["name"];
+		$event->description = $_POST["description"];
+		$event->data = $_POST["data"];
+		R::store($event);
 
 	include 'header.php';
 	include 'content/content_home.php';

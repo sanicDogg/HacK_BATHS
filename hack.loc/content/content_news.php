@@ -1,4 +1,6 @@
-
+<?php
+	$events = R::findAll('events');
+?>
 <section id="home" class="video-hero" style="height: 500px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
 		<div class="overlay"></div>
 			<div class="display-t display-t2 text-center">
@@ -18,11 +20,14 @@
 		<div class="colorlib-blog">
 			<div class="container">
 				<div class="row">
+					<?
+					foreach($events as $item):
+					?>
 					<div class="col-md-4 animate-box">
 						<article>
-							<h2><a href="#">Building the Mention Sales Application on Unapp</a></h2>
-							<p class="admin"><span>May 12, 2018</span></p>
-							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+							<h2><a href="#"><?echo $item["name"];?></a></h2>
+							<p class="admin"><span><?echo $item["data"]?></span></p>
+							<p><?echo $item["description"]?></p>
 							<p class="author-wrap"><a href="#" class="author-img" style="background-image: url(images/person1.jpg);"></a> <a href="#" class="author">by Dave Miller</a></p>
 						</article>
 					</div>
@@ -42,3 +47,4 @@
 				</div>
 			</div>
 		</div>
+<?endforeach;?>
