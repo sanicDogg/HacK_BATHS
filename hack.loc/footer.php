@@ -1,4 +1,8 @@
-		<footer id="colorlib-footer">
+<?
+$events = R::findAll('events');
+$events = array_reverse($events);
+?>
+<footer id="colorlib-footer">
 			<div class="container">
 				<div class="row row-pb-md">
 					<div class="col-md-3 colorlib-widget">
@@ -16,38 +20,31 @@
 						<p>
 							<ul class="colorlib-footer-links">
 								<li><a href="index.php"><i class="icon-check"></i> Домой</a></li>
-								<li><a href="about.html"><i class="icon-check"></i> О нас</a></li>
-								<li><a href="blog.html"><i class="icon-check"></i> Новости</a></li>
+								<li><a href="about.php"><i class="icon-check"></i> О нас</a></li>
+								<li><a href="news.php"><i class="icon-check"></i> Новости</a></li>
 							</ul>
 						</p>
 					</div>
 
 					<div class="col-md-3 colorlib-widget">
 						<h4>Свежее</h4>
+						<?
+						$i = 0;
+						foreach($events as $item):
+						?>
 						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);">
+							<a href="news.php" class="blog-img" style="background-image: url(<?echo $item->img_link?>);">
 							</a>
 							<div class="desc">
-								<h2><a href="blog.html">Photoshoot Technique</a></h2>
-								<p class="admin"><span>30 March 2018</span></p>
+								<h2><a href="news.php"><?echo $item->name?></a></h2>
+								<p class="admin"><span><?echo $item->date_of_publicating?></span></p>
 							</div>
 						</div>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-2.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Camera Lens Shoot</a></h2>
-								<p class="admin"><span>30 March 2018</span></p>
-							</div>
-						</div>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Imahe the biggest photography studio</a></h2>
-								<p class="admin"><span>30 March 2018</span></p>
-							</div>
-						</div>
+						<?
+							$i++;
+							if($i==3)break;
+							endforeach;
+						?>
 					</div>
 
 					<div class="col-md-3 colorlib-widget">
