@@ -17,26 +17,26 @@
 </section>
 
 <div >
-<form style="padding: 100px"  method="POST" action="/add_organization.php">
+<form style="padding: 100px"  method="POST" action="/add_event.php">
 	<div>
 		<p align="center" style="font-size: 27px">Заполните поля</p>
 	</div>
 <div align="center">
 	<div class="row form-group">
 		<div class="col-md-6">
-			<input type="text" id="" class="form-control" name="fio" placeholder="Введите название события">
+			<input type="text" id="" class="form-control" name="name" placeholder="Введите название события">
 		</div>
 	</div>
 	<div class="row form-group">
 		<div class="col-md-12">
-			<textarea rows="4" type="text" id="" class="form-control" name="addSkills" placeholder="Описание"></textarea>
+			<textarea rows="4" type="text" id="" class="form-control" name="description" placeholder="Описание"></textarea>
 		</div>
 	</div>
 
 
 	<div class="row form-group">
 		<div class="col-md-6">
-			<input type="date" id="" class="form-control" name="contact_phone" placeholder="Дата проведения" maxlength="10">
+			<input type="date" id="" class="form-control" name="data" placeholder="Дата проведения" maxlength="10">
 		</div>
 	</div>
 
