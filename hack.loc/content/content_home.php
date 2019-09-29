@@ -116,6 +116,7 @@
     </div>
     <div class="row">
       <?
+			$i = 0;
       foreach($events as $item):
       ?>
       <div class="col-md-4 animate-box">
