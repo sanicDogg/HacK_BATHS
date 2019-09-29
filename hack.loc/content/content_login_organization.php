@@ -35,17 +35,7 @@
 </div>
 </section>
 
-<form style="padding: 100px" method="POST" action="/login_volunteer.php">
-	<div style="
-	padding-bottom: 0;
-	text-align: center;
-" class="row">
-	<h1>Настоятельно рекомендуем авторизоваться через VK!</h1>
-
-	<p>
-		<a class="btn btn-primary btn-lg btn-custom" href="/vk_access.php">Войти через VK</a>
-	</p>
-</div>
+<form style="padding: 100px" method="POST" action="/login_organization.php">
 	<div>
 		<p align="center" style="font-size: 27px">Заполните форму для регистрации</p>
 	</div>
