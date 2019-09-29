@@ -101,6 +101,8 @@ if (!empty($_SESSION['logged_user'])):
 																'exports', 'online', 'photo_200', 'relation', 'status')));
 			?>
 
+
+      <div class="col-md-4 text-center animate-box fadeInUp animated-fast">
 			<div class="container">
 			<div id="main">
 
@@ -203,6 +205,10 @@ if (!empty($_SESSION['logged_user'])):
 			</div>
 
 			</div>
+</div>
+</div>
+</div>
+</div>
 			<?endif;?>
 
 <?else:?>
