@@ -127,7 +127,7 @@ if (!empty($_SESSION['logged_user'])):
 			                <div class="desc">
 			                 <h3><?echo $response[0]["first_name"]." ".$response[0]["last_name"];?></h3>
 			                <span>IT евангелист, дизайнер</span>
-			                <p>Парень, хорошо работающий языком и это не то, о чем вы возможно подумали.</p>
+			                <p><?echo $item->expections?></p>
 			                </div>
 			            </div>
 			          </div>
