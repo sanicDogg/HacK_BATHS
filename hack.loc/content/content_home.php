@@ -78,7 +78,7 @@
           <div class="counter-entry">
             <span class="icon"><i class="flaticon-ribbon"></i></span>
             <div class="desc">
-              <span class="colorlib-counter js-counter" data-from="0" data-to="4" data-speed="5000" data-refresh-interval="50"></span>
+              <span class="colorlib-counter js-counter" data-from="0" data-to="2" data-speed="5000" data-refresh-interval="50"></span>
               <span class="colorlib-counter-label">Волонтеры работающие с нами</span>
             </div>
           </div>
