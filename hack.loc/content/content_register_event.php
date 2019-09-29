@@ -37,7 +37,7 @@
 	<div class="row form-group">
 		<div class="col-md-6">
 			<h3>Дата проведения:</h3>
-			<input type="date" id="" class="form-control" name="data" placeholder="Дата проведения" maxlength="10">
+			<input type="date" id="" class="form-control" name="date" placeholder="Дата проведения" maxlength="10">
 		</div>
 	</div>
 
