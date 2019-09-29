@@ -33,10 +33,10 @@ $events = array_reverse($events);
 						foreach($events as $item):
 						?>
 						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(<?echo $item->img_link?>);">
+							<a href="news.php" class="blog-img" style="background-image: url(<?echo $item->img_link?>);">
 							</a>
 							<div class="desc">
-								<h2><a href="blog.html"><?echo $item->name?></a></h2>
+								<h2><a href="news.php"><?echo $item->name?></a></h2>
 								<p class="admin"><span><?echo $item->date_of_publicating?></span></p>
 							</div>
 						</div>

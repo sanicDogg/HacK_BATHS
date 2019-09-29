@@ -34,8 +34,8 @@
 					</div>
 					<?endforeach;?>
 				</div>
-
-				<div class="row">
+					
+				<!-- <div class="row">
 					<div class="col-md-12 text-center">
 						<ul class="pagination">
 							<li class="disabled"><a href="#">&laquo;</a></li>
@@ -46,6 +46,6 @@
 							<li><a href="#">&raquo;</a></li>
 						</ul>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
