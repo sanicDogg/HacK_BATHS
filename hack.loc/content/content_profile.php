@@ -98,9 +98,11 @@ if (!empty($_SESSION['logged_user'])):
 				$response = $vk->users()->get($access_token,
 				array('user_ids' => array($response[0]["id"]),
 						'fields' => array('city', 'about', 'activities', 'sex', 'bdate', 'contacts',
-																'exports', 'online', 'photo_200', 'relation')));
+																'exports', 'online', 'photo_200', 'relation', 'status')));
 			?>
 
+
+      <div class="col-md-4 text-center animate-box fadeInUp animated-fast">
 			<div class="container">
 			<div id="main">
 
@@ -119,7 +121,7 @@ if (!empty($_SESSION['logged_user'])):
 			 <img src="<?echo $response[0]['photo_200']?>">
 			 <h3><?echo $response[0]["first_name"]." ".$response[0]["last_name"];?></h3>
 			 <small class="label label-warning">Российская Федерация</small>
-			 <p>Я простой Русский пацан и мне всё по барабану.</p>
+			 <p><?echo $response[0]["status"];?></p>
 			 </div>
 			 </div>
 			 </div>
@@ -203,6 +205,10 @@ if (!empty($_SESSION['logged_user'])):
 			</div>
 
 			</div>
+</div>
+</div>
+</div>
+</div>
 			<?endif;?>
 
 <?else:?>
