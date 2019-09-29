@@ -26,19 +26,19 @@
 <div align="center">
 	<div class="row form-group">
 		<div class="col-md-6">
-			<input type="text" id="" class="form-control" name="name" placeholder="Введите название организации">
+			<input type="text" id="fname" class="form-control" name="name" placeholder="Введите название организации">
 		</div>
 	</div>
 
 	<div class="row form-group">
 		<div class="col-md-6">
-			<input type="text" id="" class="form-control" name="email" placeholder="Введите e-mail">
+			<input type="text" id="lname" class="form-control" name="email" placeholder="Введите e-mail">
 		</div>
 	</div>
 	
 	<div class="row form-group">
 		<div class="col-md-6">
-			<input type="tel" id="" class="form-control" name="contact_phone" placeholder="Номер телефона. Пример: 89992225040"  maxlength="11">
+			<input type="tel" id="fname" class="form-control" name="contact_phone" placeholder="Номер телефона. Пример: 89992225040"  maxlength="11">
 		</div>
 	</div>
 
