@@ -32,6 +32,7 @@ if  (!empty($access_token)){
   $user = R::dispense('volunteers');
   $user->accessToken = $access_token;
   $user->isVolunteer = 1;
+  $user->date_of_registration = date("d/m/Y");
 
   $_SESSION['logged_user'] = $user;
   R::store($user);
