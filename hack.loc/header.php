@@ -49,8 +49,6 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	<body>
-
 	<div class="colorlib-loader"></div>
 
 	<div id="page">
