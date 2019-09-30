@@ -51,8 +51,8 @@ $events = array_reverse($events);
 						<h4>Контакты</h4>
 						<ul class="colorlib-footer-links">
 							<li>Россия, Санкт-Петербург, <br> Исакиевская пл. 1</li>
-							<li><a href="tel://1234567920"><i class="icon-phone"></i> + 79*********</a></li>
-							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> the_best_volunteer_maker@mail.ru</a></li>
+							<li><a href="tel://+ 79600588599"><i class="icon-phone"></i> + 79600588599</a></li>
+							<li><a href="mailto:the_best_volunteer_maker@mail.ru"><i class="icon-envelope"></i> the_best_volunteer_maker@mail.ru</a></li>
 						</ul>
 					</div>
 				</div>

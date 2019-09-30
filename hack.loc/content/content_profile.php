@@ -491,17 +491,12 @@ if (!empty($_SESSION['logged_user'])):
 			 			<label class="radio">
 			 		  		<input type="radio" name="optionsRadios" id="" value="option4">
 			 		    	<div class="col-md-12">
-			 		  			<textarea rows="4" type="text" id="" class="form-control" name="optionsRadios" placeholder="Другое"> </textarea>
+			 					<textarea rows="4" type="text" id="" class="form-control" name="more" placeholder="Другое" ></textarea>
 			 				</div>
 			 			</label>
 			 		</div>
 			 	</div>
 
-	     <div class="row form-group">
-			 		<div class="col-md-12">
-			 			<input type="text" id="" class="form-control" name="photoLink" placeholder="Ссылка на Ваше фото">
-			 		</div>
-	     </div>
 			 	<div class="form-group">
 			 		<input type="submit" value="Отправить" class="btn btn-primary">
 			 	</div>
