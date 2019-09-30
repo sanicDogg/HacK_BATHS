@@ -49,7 +49,6 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	</head>
 	<body>
 
 	<div class="colorlib-loader"></div>
@@ -65,9 +64,7 @@
 						<div class="col-md-10 text-right menu-1">
 							<ul>
 								<li><a href="index.php">Домой</a></li>
-								<li class="">
-									<a href="profile.php">Мой профиль</a>
-								</li>
+								<li><a href="profile.php">Мой профиль</a></li>
 								<li><a href="organizations.php">Организации</a></li>
 								<li><a href="news.php">События</a></li>
 								<li><a href="about.php">О нас</a></li>
